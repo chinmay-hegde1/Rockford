@@ -1,0 +1,34 @@
+<h4 style="text-align: center; font-size: xx-large;  font-weight: bolder; color: brown;">Welcome {{username}} !!</h4>
+<div class="container">
+    <div class="centered-div">
+    <br>
+    <p>Online Learning Portal</p>
+    <br>
+    <form #form1 = 'ngForm'>
+    Full Name <input type="text" name="user" id="user" placeholder="Enter your Full name" required ngModel>
+    <br><br>
+    Email Address <input type="email" name="email" id="email" ngModel placeholder="Enter the email address" required><br>
+    <br>Enter your Age <input type="number" name="age" id="age" placeholder="Enter age" required ngModel >
+    <br><br>
+    <p>Please select type of course</p>
+    <input type="radio" id="course" ngModel name="tcourse" value="Online Course">Online course<br>
+    <input type="radio" id="course" ngModel name="tcourse" value="Campus course">Campus Program
+    <br>
+    <p>Select course</p>
+    <input type="checkbox" id="1" ngModel name="deepl" value="deep learning">Deep Learning<br>
+    <input type="checkbox" id="2" ngModel name="webd" value="web development">Web Develeopment<br>
+    <input type="checkbox" id="3" ngModel name="dsa" value="Data structure and algorithm">Data structure and algorithm<br>
+    <input type="checkbox" id="4" ngModel name="ml" value="Machine Learning">Machine Learning<br>
+    <input type="checkbox" id="5" ngModel name="verilog" value="Verilog">Verilog Basics<br>
+    <input type="checkbox" id="6" ngModel name="pic" value="PIC Microcontroller">PIC Mictocontroller<br>
+    <input type="checkbox" id="7" ngModel name="python" value="Python for everybody">Python for everybody<br>
+    <input type="checkbox" id="8" ngModel name="Angular" value="Angular js">Angular<br>
+    <input type="checkbox" id="9" ngModel name="Java" value="Java full stack development">Java full stack development<br>
+    <input type="checkbox" id="10" ngModel name="digital" value="digital Marketing">Digital Marketing<br>
+    <input type="checkbox" id="11" ngModel name="Django" value="Django for professionals">Django for Professionals<br>
+    <input type="checkbox" id="12" ngModel name="content" value="content writing for beginners">Content Writing for Beginenrs<br>
+    <br><br><br>
+    <input type="button" name="btn1" id="btn1" value="Register" class="btn" [disabled]='!form1.valid' (click)='log(form1)'>
+    </form>
+    </div>
+    </div>
